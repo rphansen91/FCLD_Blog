@@ -32,15 +32,18 @@
             <div class="row">
                 <div class="col-md-3">
                     <h3>Topics</h3>
+                    <!--Differnet topics when blogs are added should be filed accordingly-->
                     <ul class="nav nav-pills nav-stacked">
                         <li><a href="#">Dentistry</a></li>
                         <li><a href="#">Cosmetics</a></li>
                         <li><a href="#">Obagi</a></li>
                         <li><a href="#">Spa</a></li>
+                        <li><a href="#">Longboarding</a></li>
                     </ul>
                 </div>
                 <div class="col-md-9">
                     <!--Carousel-->
+                    <!--Most Recent/Featured post to draw readers attention-->
                     <div id="this-carousel-id" class="carousel slide" data-ride="carousel"><!-- class of slide for animation -->
                         <ol class="carousel-indicators">
                             <li data-target="#this-carousel-id" data-slide-to="0" class="active"></li>
@@ -80,27 +83,20 @@
                         <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
                     </div><!-- /.carousel -->
                 </div>
-                <!--<div class="col-md-3">
-                    Sign Up
-                    <h3>Sign Up</h3>
-                    <p>In order to receive updates on new articles and other benefits join our email list below</p>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Email Address"/>
-                    </div>
-                    <p></p>
-                    <button type="button" class="btn btn-default">Sign Up</button>
-                </div>-->
             </div>
             <h3></h3>
             <div class="row">
-                <div class="col-md-3">
-                    <p>"Quote of Dr. Kimmels views and dental philosophy"</p>
-                    <p>"Quote of Dr. Kimmels views and dental philosophy"</p>
-                    <p>"Quote of Dr. Kimmels views and dental philosophy"</p>
+                <div class="col-md-3" id="left">
+                    <!--Brief bio of Dr Kimmel welcoming readers-->
+                    <h3>Welcome!</h3>
+                    <p>I entered the field of Clinical Microbiology, working for 9 years at the University of Kentucky Medical Center. During this time I started graduate school and really enjoyed doing basic research. My graduate advisor taught Biochemistry at the University of Kentucky Dental school. It was under his influence that I applied to dental school so I could continue my research.</p>
+                    <p>I graduated in 1989, from the University of Louisville Dental School, and on the day of my graduation my mother had a secret to tell me. Seems when I was 5 years old, I told her that when I grew up I wanted to be a dentist! Mom thought it was destiny, I thought it was because the dentist had a great Treasure Chest and we always got a free toy every time we went! Mom may have been right as I do love what I do every day but I also have a Treasure Chest full of toys in my office!</p>
                     <p>David A Kimmel DMD</p>
                     <img id="drKimmel" src="img/DrKimmel.png"/>
+                    <p></p>
                 </div>
                 <div class="col-md-6">
+                    <!--A few of the most recent arcticles, may also want to try a media list(bootstrap component) instead of thumbnails-->
                     <h3>Recent Articles</h3>
                     <a href="#" class="thumbnail">
                         <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS68NTnZBigD8QSxEGV6eAwyPUZLrNUur_AfhYqbwAhmubCX0aUtw"/>
@@ -117,7 +113,8 @@
                         </div> 
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" id="right">
+                    <!--Sign Up for the email list-->
                     <h3>Sign Up</h3>
                     <p>In order to receive updates on new articles and other benefits join our email list below</p>
                     <div class="input-group">
@@ -137,47 +134,48 @@
             </div>
             <!-- Footer -->
             <h3></h3>
-            <div class="row">
-                <div class="col-xs-2 col-md-2">   
-                    <h3>Connect With Us</h3>
-                    <ul>
-                        <li><a href="https://www.facebook.com/pages/The-Florida-Center-for-Laser-Dentistry/114171328593468" class="zocial icon facebook"></a></li>
-                        <p></p>
-                        <li><a href="https://plus.google.com/107222027583638509546/posts" class="zocial icon googleplus"></a></li>
-                        <p></p>
-                        <li><a href="https://www.twitter.com/" class="zocial icon twitter"></a></li>
-                        <p></p>
-                        <li><a href="https://www.linkedin.com/" class="zocial icon linkedin"></a></li>
-                    </ul>
+            <div id="footer">
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">   
+                        <h3>Connect With Us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/pages/The-Florida-Center-for-Laser-Dentistry/114171328593468" class="zocial icon facebook"></a></li>
+                            <p></p>
+                            <li><a href="https://plus.google.com/107222027583638509546/posts" class="zocial icon googleplus"></a></li>
+                            <p></p>
+                            <li><a href="https://www.twitter.com/" class="zocial icon twitter"></a></li>
+                            <p></p>
+                            <li><a href="https://www.linkedin.com/" class="zocial icon linkedin"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="http://cosmeticsmile.net/">
+                        <h3>Learn More</h3>
+                        </a>
+                        <p>Check out our full range of products on our website</p>
+                        <a href="http://cosmeticsmile.net/">
+                            <img src="img/logo.png"/>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>(727) 862-8513</h3>
+                        <a href="https://www.google.com/maps/preview#!q=12124+Cobble+Stone+Drive%2C++Bayonet+Point%2C+FL+34667&data=!4m15!2m14!1m13!1s0x88c29a53a40c5529%3A0xf9f2181e87293a36!3m8!1m3!1d23231!2d-82.683843!3d28.3256642!3m2!1i1085!2i635!4f13.1!4m2!3d28.33367!4d-82.684426"><h4>12124 Cobble Stone Drive,</h4>
+                        <h4>Bayonet Point, FL 34667</h4>
+                        <img src="img/maps.png"/></a>
+                    </div>
+                    <div class="col-md-3">
+                        <ol class="breadcrumb">
+                            <li class="active">Home</li>
+                            <li><a href="#">Links</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Cosmetic Smile</a></li>
+                            <li><a href="#">Dentistry</a></li>
+                            <li><a href="#">Cosmetics</a></li>
+                            <li><a href="#">Obagi</a></li>
+                            <li><a href="#">Spa</a></li>
+                        </ol>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <a href="http://cosmeticsmile.net/">
-                       <h3>Learn More</h3>
-                    </a>
-                    <p>Check out our full range of products on our website</p>
-                    <a href="http://cosmeticsmile.net/">
-                        <img src="img/logo.png"/>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h3>(727) 862-8513</h3>
-                    <a href="https://www.google.com/maps/preview#!q=12124+Cobble+Stone+Drive%2C++Bayonet+Point%2C+FL+34667&data=!4m15!2m14!1m13!1s0x88c29a53a40c5529%3A0xf9f2181e87293a36!3m8!1m3!1d23231!2d-82.683843!3d28.3256642!3m2!1i1085!2i635!4f13.1!4m2!3d28.33367!4d-82.684426"><h4>12124 Cobble Stone Drive,</h4>
-                    <h4>Bayonet Point, FL 34667</h4>
-                    <img src="img/maps.png"/></a>
-                </div>
-                <div class="col-md-3">
-                    <ol class="breadcrumb">
-                        <li class="active">Home</li>
-                        <li><a href="#">Links</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Cosmetic Smile</a></li>
-                        <li><a href="#">Dentistry</a></li>
-                        <li><a href="#">Cosmetics</a></li>
-                        <li><a href="#">Obagi</a></li>
-                        <li><a href="#">Spa</a></li>
-                    </ol>
-                </div>
-
             </div>
         </div>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -191,18 +189,6 @@
         <script type="text/javascript">
             $(function(){
                     $("this-carousel-id").carousel();
-                    // Initializes the carousel
-                    /*$(".start-slide").click(function(){
-                        $("#this-carousel-id").carousel('cycle');
-                    });
-                    // Cycles to the previous item
-                    $(".prev-slide").click(function(){
-                        $("#this-carousel-id").carousel('prev');
-                    });
-                    // Cycles to the next item
-                    $(".next-slide").click(function(){
-                        $("#this-carousel-id").carousel('next');
-                    });*/
             });
         </script>
     </body>
