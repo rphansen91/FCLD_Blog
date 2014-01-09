@@ -3,18 +3,37 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 }
-#top{
-	position: relative;
-	width:50%;
-	height:250px;
-	background-color: white;
-	display: inline;
-	border: 2px solid #ED8F49;
-}
 p {
 	color: #5E381B;
 }
-#drKimmel{
+a {
+	color: black;
+}
+#top{
+	position: relative;
+	display: inline;
+	width:50%;
+	height:250px;
+}
+#header {
+	position: absolute;
+	display: inline;
+	width:50%;
+	height:250px;
+	background-color: white;
+	border: 2px solid #ED8F49;
+}
+#topics {
+	background-color: #AAAAAA;
+	border: 2px solid #AAAAAA;
+	border-radius: 5px;
+}
+#topics li{
+	background-color: #AAAAAA;
+	border: 2px solid #CCCCCC;
+	border-radius: 5px;
+}
+#drKimmel {
 	width:50%;
 	height:50%;
 }
@@ -23,20 +42,14 @@ p {
 	border: 2px solid #CCCCCC;
 	border-radius: 5px;
 }
+#left p{
+	text-align: justify;
+}
 ul{list-style-type: none;}
 #footer{
 	background-color: #AAAAAA;
 	border: 2px solid #CCCCCC;
 }
-a {
-	color: #5E381B;
-}
 .thumbnail{
 	background-color: #ED8F49; 
 }
-/*.thumbnail .caption{
-	background-color: #AAAAAA;
-	border-radius: 5px;
-	border: 2px solid #CCCCCC;
-
-}*/
