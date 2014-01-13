@@ -2564,6 +2564,7 @@ body > #boxed .container {
 	-webkit-backface-visibility:hidden; /* Chrome and Safari */
 	-moz-backface-visibility:hidden; /* Firefox */
 	-ms-backface-visibility:hidden; /* Internet Explorer */
+	padding-bottom: 10px
 }
 	#header.sticky {
 		position: fixed;
