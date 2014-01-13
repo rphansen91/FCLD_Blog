@@ -57,3 +57,7 @@ ul{list-style-type: none;}
 .thumbnail{
 	background-color: #ED8F49; 
 }
+
+.border{
+	border: 2px solid black;
+}
