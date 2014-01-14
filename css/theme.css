@@ -2564,7 +2564,7 @@ body > #boxed .container {
 	-webkit-backface-visibility:hidden; /* Chrome and Safari */
 	-moz-backface-visibility:hidden; /* Firefox */
 	-ms-backface-visibility:hidden; /* Internet Explorer */
-	padding-bottom: 10px
+	/*padding-bottom: 10px;*/
 }
 	#header.sticky {
 		position: fixed;
@@ -2738,8 +2738,8 @@ body > #boxed .container {
 			/* logo */
 			#header .logo {
 				float: left;
-				height: 40px;
-				margin-top: -5px;
+				height: 50px;
+				margin-top: -10px;
 			}
 				#header .logo img {
 					width: auto;
@@ -5197,7 +5197,12 @@ body.mobile .project-carousel .teaser .teaser-info {
 	position: relative;
 	text-align: center;
 }
-
+.clients.carousel .client img{
+	border-radius: 100%;
+}
+.clients.carousel .client a:hover{
+	
+}
 /* :::::::::: */
 /* : FOOTER : */
 /* :::::::::: */
