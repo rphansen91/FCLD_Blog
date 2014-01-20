@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<title>{{ page.title }}</title>
+	<meta name="keywords" content="HTML5 Template" />
+	<meta name="description" content="Jets - Responsive HTML5 Template">
+	<meta name="author" content="funcoders.com">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" type='image/x-icon' href="/img/favicon/logo-favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/css/bootstrap/bootstrap.css" />
+
+	<!-- AWESOME and ICOMOON fonts -->
+	<link rel="stylesheet" href="/css/fonts/awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="/css/fonts/icomoon/style.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="/js/library/slider-revolution/css/settings.css">
+	<link rel="stylesheet" href="/css/theme.css">
+	<link rel="stylesheet" href="/css/theme-elements.css">
+	<link rel="stylesheet" href="/css/color/orange.css">
+
+	<!-- Modernizr -->
+	<script type="text/javascript" src="/js/library/modernizr/modernizr.js"></script>
+
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/ie8.css">
+		<script src="js/library/respond-js/respond.src.js"></script>
+	<![endif]-->
+
+</head>
+<body class="page-team-member">
+
+	<!-- preload loaders -->
+	<img style="display:none" src="/img/loader-light.gif" alt="loader" title="loader">
+	<img style="display:none" src="/img/loader-dark.gif" alt="loader" title="loader">
+
+	{% include header.html %}
+	<div id="header-space"></div>
+	<aside id="page-header" class="page-header-image page-header-big fonts-white" style="background-image:url({{ page.image }})">
+		<div class="page-header-inner">
+			<div class="page-header-content">
+				<div class="container">
+
+					<h1 class="hide-to-left">{{ page.name }}</h1>
+					<p class="hide-to-right lead">{{ page.rank }}</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="breadcrumbs hide-to-bottom">
+			<div class="container">
+				<ul>
+					<li><a href="/index.html" class="home"></a></li>
+					<li><a href="#">Pages</a></li>
+					<li class="current"><a href="page-user.html">Team member</a></li>
+				</ul>
+			</div>
+		</div><!-- .breadcrumbs -->
+	</aside>
+	<div id="page-content" role="main">
+		<div class="container">
+
+			<!-- CONTENT -->
+			<div id="content">
+				<div class="container-out container-light">
+
+					<div class="title">
+						<h2 class="h3">About me</h2>
+					</div>
+
+					<div class="text">
+						<p>{{ page.about }}</p>
+					</div>
+
+					<div class="push"></div>
+
+					<div class="row row-inline">
+						<div class="col-sm-2">
+
+							<p><strong>Website:</strong></p>
+
+						</div><!-- .col-sm-4 -->
+						<div class="col-sm-10">
+
+							<p><a href="http://www.cosmeticsmile.net" target="_blank">http://www.CosmeticSmile.net</a></p>
+
+						</div><!-- .col-sm-4 -->
+					</div><!-- .row -->
+
+				</div><!-- .container-out -->
+				<div class="container-out container-light">
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="title title-section">
+								<h2>My Skills</h2>
+								<p>Nam et lorem eget risus dictum venenatis sit amet nec lorem. Nunc luctus sit amet ligula dapibus aliquam.</p>
+								<span class="sticker">
+									<i class="icon fa fa-tasks"></i>
+								</span>
+							</div><!-- .title.title-section -->
+
+						</div><!-- .col-sm-12 -->
+					</div><!-- .row -->
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="skill-title">
+								<h5>{{ page.skill }}</h5>
+							</div><!-- .skill-title -->
+							<div class="skill">
+								<div class="bar animated" data-value="{{page.skill_v}}">0%</div>
+							</div>
+
+							<div class="skill-title">
+								<h5>{{ page.skill1 }}</h5>
+							</div><!-- .skill-title -->
+							<div class="skill">
+								<div class="bar animated"  data-value="{{page.skill1_v}}">0%</div>
+							</div>
+
+							<div class="skill-title">
+								<h5>{{ page.skill2 }}</h5>
+							</div><!-- .skill-title -->
+							<div class="skill">
+								<div class="bar animated" data-value="{{page.skill2_v}}">0%</div>
+							</div>
+
+							<div class="skill-title">
+								<h5>{{ page.skill3 }}</h5>
+							</div><!-- .skill-title -->
+							<div class="skill">
+								<div class="bar animated" data-value="{{page.skill3_v}}">0%</div>
+							</div>
+
+						</div><!-- .col-sm-12 -->
+					</div><!-- .row -->
+				</div><!-- .container-out -->
+				<div class="row">
+					<div class="col-sm-12">
+
+						<div class="title title-section">
+							<h2>My Works</h2>
+							<p>Proin malesuada justo sed lobortis dapibus.</p>
+							<span class="sticker">
+								<i class="icon icomoon-droplet"></i>
+							</span>
+						</div><!-- .title.title-section -->
+
+					</div><!-- .col-sm-12 -->
+				</div><!-- .row -->
+				<div class="row">
+					<div class="col-sm-12">
+
+						<section class="projects grid" data-columns="3">
+							<article class="project project-animated illustration design">
+								<div class="project-heading">
+
+									<div class="thumbnail">
+										<img src="/img/uploads/project/thumbnail_M.jpg" alt="Image" title="Image">
+									</div>
+									<ul class="project-action">
+										<li><a class="lightbox btn btn-icon-view" href="img/uploads/project/thumbnail_.jpg" data-fancybox-title="&lt;h4&gt;Pellentesque auctor&lt;/h4&gt;&lt;p&gt;Maecenas quam quam, bibendum sit amet mauris sit amet, dapibus lobortis felis. Ut auctor interdum est, sit amet imperdiet ante convallis sed.&lt;/p&gt;&lt;p class='text-right'&gt;&lt;a href='portfolio-single.html' class='btn'&gt;View project&lt;/a&gt;&lt;/p&gt;" data-fancybox-group="portfolio"></a></li>
+										<li><a class="link btn btn-icon-link" href="portfolio-single.html"></a></li>
+									</ul>
+
+								</div><!-- .project-heading -->
+								<div class="project-content">
+
+									<p class="meta">
+										<span class="meta-like">48</span>
+									</p><!-- .meta -->
+									<div class="title">
+										<h2 class="h5">Pellentesque auctor</h2>
+										<p class="desc">consectetur adipiscing elit</p>
+									</div><!-- .title -->
+
+								</div><!-- .project-content -->
+							</article><!-- .project -->
+							<article class="project project-animated illustration photography">
+								<div class="project-heading">
+
+									<div class="thumbnail">
+										<img src="/img/uploads/project/thumbnail_M.jpg" alt="Image" title="Image">
+									</div>
+									<ul class="project-action">
+										<li><a class="lightbox btn btn-icon-view" href="img/uploads/project/thumbnail_.jpg" data-fancybox-title="&lt;h4&gt;Pellentesque auctor nuncnunc nunc&lt;/h4&gt;&lt;p&gt;Fusce rutrum posuere felis sit amet suscipit. Ut lectus lorem, adipiscing ut lacinia a, suscipit vitae ipsum. Suspendisse malesuada justo ut odio sodales commodo.&lt;/p&gt;&lt;p class='text-right'&gt;&lt;a href='portfolio-single.html' class='btn'&gt;View project&lt;/a&gt;&lt;/p&gt;" data-fancybox-group="portfolio"></a></li>
+										<li><a class="link btn btn-icon-link" href="portfolio-single.html"></a></li>
+									</ul>
+
+								</div><!-- .project-heading -->
+								<div class="project-content">
+
+									<p class="meta">
+										<span class="meta-like">26</span>
+									</p><!-- .meta -->
+									<div class="title">
+										<h2 class="h5">Pellentesque auctor nuncnunc nunc</h2>
+										<p class="desc">eu commodo risus</p>
+									</div><!-- .title -->
+
+								</div><!-- .project-content -->
+							</article><!-- .project -->
+							<article class="project project-animated illustration animation">
+								<div class="project-heading">
+
+									<div class="thumbnail">
+										<img src="/img/uploads/project/thumbnail_M.jpg" alt="Image" title="Image">
+									</div>
+									<ul class="project-action">
+										<li><a class="lightbox btn btn-icon-view" href="img/uploads/project/thumbnail_.jpg" data-fancybox-title="&lt;h4&gt;Quisque&lt;/h4&gt;&lt;p&gt;Nullam vitae lorem eu orci convallis adipiscing at non elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.&lt;/p&gt;&lt;p class='text-right'&gt;&lt;a href='portfolio-single.html' class='btn'&gt;View project&lt;/a&gt;&lt;/p&gt;" data-fancybox-group="portfolio"></a></li>
+										<li><a class="link btn btn-icon-link" href="portfolio-single.html"></a></li>
+									</ul>
+
+								</div><!-- .project-heading -->
+								<div class="project-content">
+
+									<p class="meta">
+										<span class="meta-like">5</span>
+									</p><!-- .meta -->
+									<div class="title">
+										<h2 class="h5">Quisque</h2>
+										<p class="desc">ut sapien tempus</p>
+									</div><!-- .title -->
+
+								</div><!-- .project-content -->
+							</article><!-- .project -->
+							<article class="project project-animated animation web">
+								<div class="project-heading">
+
+									<div class="thumbnail">
+										<img src="/img/uploads/project/thumbnail_M.jpg" alt="Image" title="Image">
+									</div>
+									<ul class="project-action">
+										<li><a class="lightbox btn btn-icon-view" href="img/uploads/project/thumbnail_.jpg" data-fancybox-title="&lt;h4&gt;Nunc tincidunt&lt;/h4&gt;&lt;p&gt;Aenean pharetra commodo ipsum, quis consequat ante iaculis id. Donec ac dui vestibulum, dignissim nunc vitae, iaculis quam.&lt;/p&gt;&lt;p class='text-right'&gt;&lt;a href='portfolio-single.html' class='btn'&gt;View project&lt;/a&gt;&lt;/p&gt;" data-fancybox-group="portfolio"></a></li>
+										<li><a class="link btn btn-icon-link" href="portfolio-single.html"></a></li>
+									</ul>
+
+								</div><!-- .project-heading -->
+								<div class="project-content">
+
+									<p class="meta">
+										<span class="meta-like">18</span>
+									</p><!-- .meta -->
+									<div class="title">
+										<h2 class="h5">Nunc tincidunt</h2>
+										<p class="desc">mi non suscipit consectetur</p>
+									</div><!-- .title -->
+
+								</div><!-- .project-content -->
+							</article><!-- .project -->
+							<article class="project project-animated illustration photography">
+								<div class="project-heading">
+
+									<div class="thumbnail">
+										<img src="/img/uploads/project/thumbnail_M.jpg" alt="Image" title="Image">
+									</div>
+									<ul class="project-action">
+										<li><a class="lightbox btn btn-icon-view" href="img/uploads/project/thumbnail_.jpg" data-fancybox-title="&lt;h4&gt;Mauris luctus pulvinar&lt;/h4&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus id dui et auctor. Nulla vehicula enim purus, vitae elementum ante vulputate.&lt;/p&gt;&lt;p class='text-right'&gt;&lt;a href='portfolio-single.html' class='btn'&gt;View project&lt;/a&gt;&lt;/p&gt;" data-fancybox-group="portfolio"></a></li>
+										<li><a class="link btn btn-icon-link" href="portfolio-single.html"></a></li>
+									</ul>
+
+								</div><!-- .project-heading -->
+								<div class="project-content">
+
+									<p class="meta">
+										<span class="meta-like">37</span>
+									</p><!-- .meta -->
+									<div class="title">
+										<h2 class="h5">Mauris luctus pulvinar</h2>
+										<p class="desc">felis nec</p>
+									</div><!-- .title -->
+
+								</div><!-- .project-content -->
+							</article><!-- .project -->
+							<article class="project project-animated photography">
+								<div class="project-heading">
+
+									<div class="thumbnail">
+										<img src="/img/uploads/project/thumbnail_M.jpg" alt="Image" title="Image">
+									</div>
+									<ul class="project-action">
+										<li><a class="lightbox btn btn-icon-view" href="img/uploads/project/thumbnail_.jpg" data-fancybox-title="&lt;h4&gt;Aenean auctor&lt;/h4&gt;&lt;p&gt;Suspendisse eget condimentum elit. Vestibulum dignissim cursus pulvinar. Suspendisse tempus eget enim nec euismod. Ut pharetra justo sed adipiscing pretium.&lt;/p&gt;&lt;p class='text-right'&gt;&lt;a href='portfolio-single.html' class='btn'&gt;View project&lt;/a&gt;&lt;/p&gt;" data-fancybox-group="portfolio"></a></li>
+										<li><a class="link btn btn-icon-link" href="portfolio-single.html"></a></li>
+									</ul>
+
+								</div><!-- .project-heading -->
+								<div class="project-content">
+
+									<p class="meta">
+										<span class="meta-like">58</span>
+									</p><!-- .meta -->
+									<div class="title">
+										<h2 class="h5">Aenean auctor</h2>
+										<p class="desc">erat in purus</p>
+									</div><!-- .title -->
+
+								</div><!-- .project-content -->
+							</article><!-- .project -->
+							<article class="project project-animated illustration web animation">
+								<div class="project-heading">
+
+									<div class="thumbnail">
+										<img src="/img/uploads/project/thumbnail_M.jpg" alt="Image" title="Image">
+									</div>
+									<ul class="project-action">
+										<li><a class="lightbox btn btn-icon-view" href="img/uploads/project/thumbnail_.jpg" data-fancybox-title="&lt;h4&gt;Aenean&lt;/h4&gt;&lt;p&gt; Maecenas dapibus euismod nunc vel condimentum. Suspendisse dapibus fermentum tempor.&lt;/p&gt;&lt;p class='text-right'&gt;&lt;a href='portfolio-single.html' class='btn'&gt;View project&lt;/a&gt;&lt;/p&gt;" data-fancybox-group="portfolio"></a></li>
+										<li><a class="link btn btn-icon-link" href="portfolio-single.html"></a></li>
+									</ul>
+
+								</div><!-- .project-heading -->
+								<div class="project-content">
+
+									<p class="meta">
+										<span class="meta-like">11</span>
+									</p><!-- .meta -->
+									<div class="title">
+										<h2 class="h5">Aenean</h2>
+										<p class="desc">auctor erat in</p>
+									</div><!-- .title -->
+
+								</div><!-- .project-content -->
+							</article><!-- .project -->
+							<article class="project project-animated design">
+								<div class="project-heading">
+
+									<div class="thumbnail">
+										<img src="/img/uploads/project/thumbnail_M.jpg" alt="Image" title="Image">
+									</div>
+									<ul class="project-action">
+										<li><a class="lightbox btn btn-icon-view" href="img/uploads/project/thumbnail_.jpg" data-fancybox-title="&lt;h4&gt;Vestibulum tristique&lt;/h4&gt;&lt;p&gt;Fusce eget condimentum quam. Vestibulum nec sapien odio. Etiam vel neque et tortor molestie vehicula ornare mollis tortor. Quisque in scelerisque diam.&lt;/p&gt;&lt;p class='text-right'&gt;&lt;a href='portfolio-single.html' class='btn'&gt;View project&lt;/a&gt;&lt;/p&gt;" data-fancybox-group="portfolio"></a></li>
+										<li><a class="link btn btn-icon-link" href="portfolio-single.html"></a></li>
+									</ul>
+
+								</div><!-- .project-heading -->
+								<div class="project-content">
+
+									<p class="meta">
+										<span class="meta-like">4</span>
+									</p><!-- .meta -->
+									<div class="title">
+										<h2 class="h5">Vestibulum tristique</h2>
+										<p class="desc">nisl eu urna hendrerit</p>
+									</div><!-- .title -->
+
+								</div><!-- .project-content -->
+							</article><!-- .project -->
+							<article class="project project-animated design web">
+								<div class="project-heading">
+
+									<div class="thumbnail">
+										<img src="/img/uploads/project/thumbnail_M.jpg" alt="Image" title="Image">
+									</div>
+									<ul class="project-action">
+										<li><a class="lightbox btn btn-icon-view" href="img/uploads/project/thumbnail_.jpg" data-fancybox-title="&lt;h4&gt;Ut quam dolor&lt;/h4&gt;&lt;p&gt;Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent et facilisis diam. Suspendisse potenti.&lt;/p&gt;&lt;p class='text-right'&gt;&lt;a href='portfolio-single.html' class='btn'&gt;View project&lt;/a&gt;&lt;/p&gt;" data-fancybox-group="portfolio"></a></li>
+										<li><a class="link btn btn-icon-link" href="portfolio-single.html"></a></li>
+									</ul>
+
+								</div><!-- .project-heading -->
+								<div class="project-content">
+
+									<p class="meta">
+										<span class="meta-like">63</span>
+									</p><!-- .meta -->
+									<div class="title">
+										<h2 class="h5">Ut quam dolor</h2>
+										<p class="desc">vestibulum vitae</p>
+									</div><!-- .title -->
+
+								</div><!-- .project-content -->
+							</article><!-- .project -->
+						</section><!-- .projects -->
+
+					</div><!-- .col-sm-12 -->
+				</div><!-- .row -->
+			</div><!-- #content -->
+
+		</div><!-- .container -->
+	</div><!-- #page-content -->
+	{% include footer.html %}
+
+	<!-- jQuery & Helper library -->
+	<script type="text/javascript" src="/js/library/jquery/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/js/library/helper/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="/js/library/helper/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="/js/library/helper/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="/js/library/helper/imagesloaded.pkgd.min.js"></script>
+
+	<!-- Retina js -->
+	<script type="text/javascript" src="/js/library/retina/retina.js"></script>
+
+	<!-- FancyBox -->
+	<script type="text/javascript" src="/js/library/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Bootstrap js -->
+	<script type="text/javascript" src="/js/library/bootstrap/bootstrap.min.js"></script>
+
+	<!-- Isotope -->
+	<script type="text/javascript" src="/js/library/isotope/jquery.isotope.js"></script>
+
+	<!-- Validate -->
+	<script type="text/javascript" src="/js/library/validate/jquery.validate.min.js"></script>
+
+	<!-- FlickrFeed  -->
+	<script type="text/javascript" src="/js/library/jFlickrFeed/jflickrfeed.min.js"></script>
+
+	<!-- Main theme javaScript file -->
+	<script type="text/javascript" src="/js/theme.js"></script>
+
+</body>
+</html>

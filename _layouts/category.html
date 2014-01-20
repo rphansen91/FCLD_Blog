@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<title>{{ page.title }}</title>
+	<meta name="keywords" content="HTML5 Template" />
+	<meta name="description" content="Jets - Responsive HTML5 Template">
+	<meta name="author" content="funcoders.com">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" type='image/x-icon' href="/img/favicon/logo-favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/css/bootstrap/bootstrap.css" />
+
+	<!-- AWESOME and ICOMOON fonts -->
+	<link rel="stylesheet" href="/css/fonts/awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="/css/fonts/icomoon/style.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="/js/library/slider-revolution/css/settings.css">
+	<link rel="stylesheet" href="/css/theme.css">
+	<link rel="stylesheet" href="/css/theme-elements.css">
+	<link rel="stylesheet" href="/css/color/orange.css">
+
+	<!-- Modernizr -->
+	<script type="text/javascript" src="/js/library/modernizr/modernizr.js"></script>
+
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/ie8.css">
+		<script src="js/library/respond-js/respond.src.js"></script>
+	<![endif]-->
+
+</head>
+<body class="blog-grid">
+
+	<!-- preload loaders -->
+	<img style="display:none" src="img/loader-light.gif" alt="loader" title="loader">
+	<img style="display:none" src="img/loader-dark.gif" alt="loader" title="loader">
+
+	{% include header.html %}
+	<div id="header-space"></div>
+	<div id="page-content" role="main">
+		<div class="container">
+
+			<div id="content">
+
+				<header class="devider-bottom devider-heavy devider-margin-medium">
+					<h1 class="text-center">{{ page.title }}</h1>
+					<p class="excerpt text-center">{{ page.caption }}</p>
+				</header>
+				<section class="posts grid" data-columns="3">
+					{% if page.title == "Dentistry" %}
+						{% if site.categories.dentistry | size > 0 %}
+							{% for post in site.categories.dentistry %}
+								{% include thumbnail_a.html %}
+							{% endfor %}
+						{% else %}
+							<p class="text-center">Their are currently no posts on this topic.</p>
+						{% endif %}
+					{% elsif page.title == "Cosmetics" %}
+						{% if site.categories.cosmetics | size > 0 %}	
+							{% for post in site.categories.cosmetics %}
+								{% include thumbnail_a.html %}
+							{% endfor %}
+						{% else %}
+							<p class="text-center">Their are currently no posts on this topic.</p>
+						{% endif %}
+					{% elsif page.title == "Obagi" %}
+						{% if site.categories.obagi | size > 0 %}
+							{% for post in site.categories.obagi %}
+								{% include thumbnail_a.html %}
+							{% endfor %}
+						{% else %}
+							<p class="text-center">Their are currently no posts on this topic.</p>
+						{% endif %}
+					{% elsif page.title == "Spa" %}
+						{% if site.categories.spa | size > 0 %}
+							{% for post in site.categories.spa %}
+								{% include thumbnail_a.html %}
+							{% endfor %}
+						{% else %}
+							<p class="text-center">Their are currently no posts on this topic.</p>
+						{% endif %}
+					{% else %}
+						{% if site.categories.longboarding | size > 0 %}
+							{% for post in site.categories.longboarding %}
+								{% include thumbnail_a.html %}
+							{% endfor %}
+						{% else %}
+							<p class="text-center">Their are currently no posts on this topic.</p>
+						{% endif %}
+					{% endif %}
+					
+				</section><!-- .posts -->				
+
+			</div><!-- #content -->
+
+		</div><!-- .container -->
+	</div><!-- #page-content -->
+	{% include footer.html %}
+	<!-- jQuery & Helper library -->
+	<script type="text/javascript" src="/js/library/jquery/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/js/library/helper/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="/js/library/helper/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="/js/library/helper/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="/js/library/helper/imagesloaded.pkgd.min.js"></script>
+
+	<!-- Retina js -->
+	<script type="text/javascript" src="/js/library/retina/retina.js"></script>
+
+	<!-- FancyBox -->
+	<script type="text/javascript" src="/js/library/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Bootstrap js -->
+	<script type="text/javascript" src="/js/library/bootstrap/bootstrap.min.js"></script>
+
+	<!-- carouFredSel -->
+	<script type="text/javascript" src="/js/library/carouFredSel/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+	<!-- Isotope -->
+	<script type="text/javascript" src="/js/library/isotope/jquery.isotope.js"></script>
+
+	<!-- Validate -->
+	<script type="text/javascript" src="/js/library/validate/jquery.validate.min.js"></script>
+
+	<!-- FlickrFeed  -->
+	<script type="text/javascript" src="/js/library/jFlickrFeed/jflickrfeed.min.js"></script>
+
+	<!-- Main theme javaScript file -->
+	<script type="text/javascript" src="/js/theme.js"></script>
+
+</body>
+</html>

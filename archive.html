@@ -1,3 +1,7 @@
+---
+title: Archive
+---
+
 <!DOCTYPE html>
 <!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
@@ -6,7 +10,7 @@
 
 	<!-- Basic -->
 	<meta charset="utf-8">
-	<title>Archive</title>
+	<title>{{ page.title }}</title>
 	<meta name="keywords" content="HTML5 Template" />
 	<meta name="description" content="Jets - Responsive HTML5 Template">
 	<meta name="author" content="funcoders.com">
@@ -48,84 +52,7 @@
 	<!-- preload loaders -->
 	<img style="display:none" src="img/loader-light.gif" alt="loader" title="loader">
 	<img style="display:none" src="img/loader-dark.gif" alt="loader" title="loader">
-
-	<header id="header">
-		<aside class="topbar">
-			<div class="container">
-
-				<ul class="touch">
-					<li>
-						<img src="img/phone.png" alt="Phone" title="Phone">
-						<p>(727) 862-8513</p></li>
-					<li>
-						<img src="img/mail.png" alt="Mail" title="Mail">
-						<p><a href="mailto:fcld@verizon.net">FCLD@Verizon.net</a></p>
-					</li>
-					<li>
-						<img src="img/map.png" alt="Map" title="Map">
-						<p>12124 Cobblestone Dr<br />Hudson, FL 34667</p>
-					</li>
-				</ul><!-- .touch -->
-
-				<ul class="social">
-					<li><a href="http://www.youtube.com/user/Ltrypsin?feature=g-subs-u" class="youtube"></a></li>
-					<li><a href="https://www.facebook.com/pages/The-Florida-Center-for-Laser-Dentistry/114171328593468" class="facebook"></a></li>
-					<li><a href="https://plus.google.com/107222027583638509546/posts" class="google"></a></li>
-				</ul><!-- .social -->
-
-			</div><!-- .container -->
-		</aside><!-- .topbar -->
-  		<nav class="navbar">
-			<aside id="main-search">
-				<div class="container">
-					<form action="#" method="GET">
-						<a href="#" class="close"><span class="icomoon-close"></span></a>
-						<div class="form-field">
-						<label for="query">search on site...</label>
-							<input type="text" name="query" id="query">
-						</div>
-					</form>
-				</div>
-			</aside><!-- #main-search -->
-			<div class="container desktop-navbar">
-				<a href="home.html" class="logo">
-					<img src="img/logo.png" alt="Jets">
-				</a>
-				<ul id="main-menu" class="custom carret">
-					<li><a href="home.html">Home<i>Let's Start here!</i></a>
-					</li>
-					<li><a href="http://www.cosmeticsmile.net">Site<i>Cosmetic Smile</i></a>
-					</li>	
-					<li><a href="blog.html">Blog<i>Latest News</i></a>
-						<ul>
-							<li><a href="topic.html">Topics</a>
-								<ul>
-									<li><a href="dentistry.html">Dentistry</a></li>
-									<li><a href="cosmetics.html">Cosmetics</a></li>
-									<li><a href="obagi.html">Obagi</a></li>
-									<li><a href="spa.html">Spa</a></li>
-									<li><a href="longboarding.html">Longboarding</a></li>
-								</ul>
-							</li>
-							<li class="current"><a href="archive.html">Archive</a></li>
-						</ul>
-					</li>
-					<li><a href="contact.html">Contact<i>Get in Touch</i></a>
-					<li><a href="#" class="btn-search"><span class="fa fa-search"></span></a></li>
-				</ul>
-			</div><!-- .desktop-navbar -->
-			<div class="container mobile-navbar">
-				<a href="index.html" class="logo">
-					<img src="img/logo.png" alt="Jets">
-				</a>
-				<ul class="mobile-btn">
-					<li><a class="btn-navbar" href="#"><span class="fa fa-reorder"></span></a></li>
-					<li><a class="btn-search" href="#"><span class="fa fa-search"></span></a></li>
-				</ul>
-			</div><!-- .mobile-navbar -->
-		</nav><!-- .navbar -->
-		<nav id="mobile-menu"></nav>
-	</header><!-- #header -->
+	{% include header.html %}
 	<div id="header-space"></div>
 	<div id="page-content" role="main">
 		<div class="container">
@@ -284,64 +211,7 @@
 
 		</div><!-- .container -->
 	</div><!-- #page-content -->
-	<footer id="footer">
-		<div class="container">
-			<div class="row middle">
-				<div class="col-sm-6">
-
-					<div class="title title-main">
-						<h5>Newsletter</h5>
-					</div>
-					<div class="text">
-						<p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
-					</div>
-
-				</div><!-- .col-sm-6 -->
-				<div class="col-sm-6">
-
-					<form action="php/newsletter.php" method="POST" class="subscribe form-validate">
-						<button type="submit" class="btn btn-icon-newsletter"></button>
-						<div class="form-field">
-							<label for="subscribeemail">email...</label>
-							<input type="email" maxlength="100" name="subscribeemail" id="subscribeemail" required />
-						</div>
-					</form>
-
-				</div><!-- .col-sm-6 -->
-			</div><!-- .row-->
-		
-			<hr class="devider-heavy" />
-			<ul class="nav text-center">
-				<li><a href="home.html">Home</a></li>
-				<li><a href="#">Site</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			<hr class="devider-heavy" />
-			<div class="row middle">
-				<div class="col-md-7">
-
-					<ul class="touch">
-						<li><i class="fa icomoon-location"></i><p>12124 Cobblestone Dr<br />Hudson, FL 34667</p></li>
-						<li><i class="fa fa-phone"></i><p>(727) 862-8513</p></li>
-						<li><i class="fa fa-envelope"></i><p><a href="mailto:fcld@verizon.net">FCLD@Verizon.net</a></p></li>
-					</ul>
-
-				</div><!-- .col-md-7 -->
-				<div class="col-md-5">
-
-					<ul class="social">
-					<li><a href="http://www.youtube.com/user/Ltrypsin?feature=g-subs-u" class="youtube"></a></li>
-					<li><a href="https://www.facebook.com/pages/The-Florida-Center-for-Laser-Dentistry/114171328593468" class="facebook"></a></li>
-					<li><a href="https://plus.google.com/107222027583638509546/posts" class="google"></a></li>
-				</ul><!-- .social -->
-
-				</div><!-- .col-md-5 -->
-			</div><!-- .row -->
-			<div class="push"></div>
-		</div><!-- .container -->
-		<div class="credits"> hatched by MILLENNIUM TECHNOLOGY GROUP © 2014<span>|</span><a href="#">Terms</a><span>|</span><a href="#">Legal Notice</a></div>
-	</footer>
+	{% include footer.html %}
 
 	<!-- jQuery & Helper library -->
 	<script type="text/javascript" src="js/library/jquery/jquery-1.10.2.min.js"></script>
