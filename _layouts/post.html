@@ -11,36 +11,7 @@
 	<meta name="description" content="Jets - Responsive HTML5 Template">
 	<meta name="author" content="funcoders.com">
 
-	<!-- Favicons -->
-	<link rel="shortcut icon" type='image/x-icon' href="/img/favicon/logo-favicon.ico">
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-
-	<!-- Mobile Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="/css/bootstrap/bootstrap.css" />
-
-	<!-- AWESOME and ICOMOON fonts -->
-	<link rel="stylesheet" href="/css/fonts/awesome/css/font-awesome.css">
-	<link rel="stylesheet" href="/css/fonts/icomoon/style.css">
-
-	<!-- Theme CSS -->
-	<link rel="stylesheet" href="/js/library/slider-revolution/css/settings.css">
-	<link rel="stylesheet" href="/css/theme.css">
-	<link rel="stylesheet" href="/css/theme-elements.css">
-	<link rel="stylesheet" href="/css/color/orange.css">
-
-	<!-- Modernizr -->
-	<script type="text/javascript" src="/js/library/modernizr/modernizr.js"></script>
-
-	<!--[if lte IE 8]>
-		<link rel="stylesheet" href="css/ie8.css">
-		<script src="js/library/respond-js/respond.src.js"></script>
-	<![endif]-->
+	{% include css.html %}
 
 </head>
 <body class="blog-grid">
@@ -50,99 +21,95 @@
 	<img style="display:none" src="/img/loader-dark.gif" alt="loader" title="loader">
 	{% include header.html %}
 	<div id="header-space"></div>
+	<div id="page-content" role="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
 
-<div id="page-content" role="main">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
+					<div id="content">
 
-				<div id="content">
+						<header class="devider-bottom devider-heavy devider-margin-medium">
+							<p class="meta">
+								<span>Posted by <a href="{{ page.authorUrl }}">{{ page.author }}</a></span>
+							</p><!-- .meta -->
+							<h1>{{ page.title }}</h1>
+						</header>
 
-					<header class="devider-bottom devider-heavy devider-margin-medium">
-						<p class="meta">
-							<span>Posted by <a href="{{ page.authorUrl }}">{{ page.author }}</a></span>
-						</p><!-- .meta -->
-						<h1>{{ page.title }}</h1>
-					</header>
+						<article class="post post-single post-type-text">
+							<div class="post-heading">
 
-					<article class="post post-single post-type-text">
-						<div class="post-heading">
+								<div class="thumbnail">
+									<img src="{{ page.img }}" title="{{ page.title }}" />
+								</div><!-- .thumbnail -->
 
-							<div class="thumbnail">
-								<img src="{{ page.img }}" title="{{ page.title }}" />
-							</div><!-- .thumbnail -->
+							</div><!-- .post-heading -->
+							<div class="post-content">
+								<div class="content-left">
 
-						</div><!-- .post-heading -->
-						<div class="post-content">
-							<div class="content-left">
+									<div class="article-date">
+										<span class="type"></span>
+										<span class="day">{{ page.date | date: "%d" }}</span>
+										<span class="month">{{ page.date | date: "%b" }}</span>
+										<span class="year">{{ page.date | date: "%Y" }}</span>
+									</div><!-- .date -->
+								</div><!-- .content-left -->
+								<div class="content-right">
+										{{ page.content | markdownify }}
 
-								<div class="article-date">
-									<span class="type"></span>
-									<span class="day">{{ page.date | date: "%d" }}</span>
-									<span class="month">{{ page.date | date: "%b" }}</span>
-									<span class="year">{{ page.date | date: "%Y" }}</span>
-								</div><!-- .date -->
-							</div><!-- .content-left -->
-							<div class="content-right">
-									{{ page.content | markdownify }}
+								</div><!-- .content-right -->
+							</div><!-- .post-content -->
+						</article><!-- .post -->
 
-							</div><!-- .content-right -->
-						</div><!-- .post-content -->
-					</article><!-- .post -->
+						<section class="article-author">
+							<div class="author-heading">
 
-					<section class="article-author">
-						<div class="author-heading">
+								<div class="avatar">
+									<img src="{{ page.authorImg }}" title="{{ page.author }}">
+								</div>
 
-							<div class="avatar">
-								<img src="{{ page.authorImg }}" title="{{ page.author }}">
-							</div>
+							</div><!-- .author-heading -->
+							<div class="author-content">
 
-						</div><!-- .author-heading -->
-						<div class="author-content">
+								<div class="title title-main">
+									<h4><a href="{{ page.authorUrl }}" title="{{ page.author }}" rel="author">{{ page.author }}</a></h4>
+								</div><!-- .title -->
 
-							<div class="title title-main">
-								<h4><a href="{{ page.authorUrl }}" title="{{ page.author }}" rel="author">{{ page.author }}</a></h4>
-							</div><!-- .title -->
-
-						</div><!-- .author-content -->
-					</section><!-- .article-author -->
+							</div><!-- .author-content -->
+						</section><!-- .article-author -->
+					</div>
 				</div>
-			</div>
-		</div><!-- .row -->
-	</div><!-- .container -->
-</div><!-- #page-content -->
+			</div><!-- .row -->
+			<!-- Related Posts -->
+			<div class="container-out container-light">
+				<div class="title title-section">
+					<h2>Related Posts</h2>
+					<span class="sticker">
+						<i class="icon fa fa-bullhorn"></i>
+					</span>
+				</div><!-- .title.title-section -->
+			</div><!-- .container-out -->
+
+			<div class="container-out">
+
+				<div class="carousel-wrap animation animation-from-left">
+					<ul class="carousel-nav">
+						<li><a href="#" class="btn btn-icon-prev prev"></a></li>
+						<li><a href="#" class="btn btn-icon-next next"></a></li>
+					</ul><!-- .carousel-nav -->						
+					<div class="carousel" data-visible="3">
+						{% for post in site.related_posts limit:3 %}
+							{% include thumbnail.html %}
+						{% endfor %}
+					</div><!-- .carousel -->
+				</div><!-- .carousel-wrap -->
+			</div><!-- .container-out -->
+
+		</div><!-- .container -->
+		<p></p>
+	</div><!-- #page-content -->
 	{% include footer.html %}
 
-	<!-- jQuery & Helper library -->
-	<script type="text/javascript" src="/js/library/jquery/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="/js/library/helper/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="/js/library/helper/jquery.touchSwipe.min.js"></script>
-	<script type="text/javascript" src="/js/library/helper/jquery.mousewheel.min.js"></script>
-	<script type="text/javascript" src="/js/library/helper/imagesloaded.pkgd.min.js"></script>
-
-	<!-- Retina js -->
-	<script type="text/javascript" src="/js/library/retina/retina.js"></script>
-
-	<!-- FancyBox -->
-	<script type="text/javascript" src="/js/library/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-	<!-- Bootstrap js -->
-	<script type="text/javascript" src="/js/library/bootstrap/bootstrap.min.js"></script>
-
-	<!-- carouFredSel -->
-	<script type="text/javascript" src="/js/library/carouFredSel/jquery.carouFredSel-6.2.1-packed.js"></script>
-
-	<!-- Twitter -->
-	<script type="text/javascript" src="/js/library/twitter/twitterfeed.js"></script>
-
-	<!-- Validate -->
-	<script type="text/javascript" src="/js/library/validate/jquery.validate.min.js"></script>
-
-	<!-- FlickrFeed  -->
-	<script type="text/javascript" src="/js/library/jFlickrFeed/jflickrfeed.min.js"></script>
-
-	<!-- Main theme javaScript file -->
-	<script type="text/javascript" src="/js/theme.js"></script>
+	{% include js.html %}
 
 </body>
 </html>
