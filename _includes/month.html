@@ -1,12 +1,12 @@
+{% assign month_i = include.month %}
 <header class="devider-bottom devider-heavy devider-margin-medium">
-	<h1>{{ include.month }} {{ include.year }}</h1>
+	<h1>{{ month_i }} {{ include.year }}</h1>
 </header>
 <section class="posts grid" data-columns="3">
 	{% for post in site.posts %}
-		{% if [post.date | date: "%Y"] == include.year %}
-			{% if include.month == [post.date | date: "%B"] %}
-				{% include thumbnail_a.html %}
-			{% endif %}
+		{% assign month = post.date | date: "%B" %}
+		{% if month == month_i %}
+			{% include description.html %}
 		{% endif %}
 	{% endfor %}
 </section>
