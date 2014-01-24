@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
@@ -137,14 +138,18 @@
 				</div><!-- .row -->
 				<div class="row">
 					<div class="col-sm-12">
-
+						{% assign count = true %}
 						<section class="projects grid" data-columns="3">
 							{% for post in site.posts %}
 								{% if post.author == page.title %}
 									{% include thumbnail_a.html %}
+									{% assign count = false %}
 								{% endif %}
 							{% endfor %}
 						</section><!-- .projects -->
+						{% if count %}
+							<p>Their are currently no posts by this user.</p>
+						{% endif %}
 
 					</div><!-- .col-sm-12 -->
 				</div><!-- .row -->

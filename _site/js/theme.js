@@ -477,7 +477,7 @@ var Jets = {
 
 						$(window).smartresize(function() {
 
-							margin 	= parseInt(box.css("margin-left").replace("px",""));
+							margin 	= parseInt(box.css("margin-left"));//.replace("px",""));
 
 							// get grid width
 							var gridWidth = $that.width()-margin, newCol;

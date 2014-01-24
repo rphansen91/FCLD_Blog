@@ -53,9 +53,8 @@
 										<span class="year">{{ page.date | date: "%Y" }}</span>
 									</div><!-- .date -->
 								</div><!-- .content-left -->
-								<div class="content-right">
+								<div class="content-right" id = "post-font">
 										{{ page.content | markdownify }}
-
 								</div><!-- .content-right -->
 							</div><!-- .post-content -->
 						</article><!-- .post -->
@@ -64,7 +63,7 @@
 							<div class="author-heading">
 
 								<div class="avatar">
-									<img src="{{ page.authorImg }}" title="{{ page.author }}">
+									<a href="{{ page.authorUrl }}" title="{{ page.author }}" rel="author"><img src="{{ page.authorImg }}" title="{{ page.author }}"></a>
 								</div>
 
 							</div><!-- .author-heading -->

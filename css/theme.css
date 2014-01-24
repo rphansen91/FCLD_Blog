@@ -5358,3 +5358,6 @@ body.mobile .project-carousel .teaser .teaser-info {
 .row + .push.push-big {
 	height: 50px;
 }
+#post-font {
+	font-size: 16px;
+}

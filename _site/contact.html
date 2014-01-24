@@ -79,12 +79,13 @@
 				<div class="container">
 					<div id="search">
   						<form action="#" method="GET">
-						<a href="#" class="close"><span class="icomoon-close"></span></a>
-						<div class="form-field">
-							<label for="query">search on site...</label>
-							<input type="text" name="query" id="query">
-						</div>
-					</form> 
+							<a href="#" class="close"><span class="icomoon-close"></span></a>
+							<div class="form-field">
+								<label for="query">search on site...</label>
+								<input type="text" name="query" id="query">
+							</div>
+						</form>
+					</div> 
 				</div>
 			</aside><!-- #main-search -->
 			<div class="container desktop-navbar">
@@ -107,7 +108,7 @@
 									<li><a href="/topics/longboarding.html">Longboarding</a></li>
 								</ul>
 							</li>
-							<li><a href="archive.html">Archive</a></li>
+							<li><a href="/archive.html">Archive</a></li>
 						</ul>
 					</li>
 					<li><a href="/contact.html">Contact<i>Get in Touch</i></a>
@@ -135,7 +136,6 @@
 		<div id="content">
 
 			<div class="address current">
-				<a href="#" class="btn to-form">Switch to form</a>
 				<div class="address-inner">
 					<div class="title">
 						<h2 class="h3">Get in touch</h2>
@@ -184,55 +184,7 @@
 					<hr />
 				</div><!-- .address-inner -->
 			</div><!-- .address -->
-			<div class="form">
-				<a href="#" class="btn to-contact">Switch to Contact</a>
-				<div class="form-inner">
-
-					<form action="php/contact.php" id="contact-form" method="POST" class="form-validate">
-						<input type="hidden" name="myemail" value="FCLD@verizon.net">
-						<input type="hidden" name="myname" value="your.agency">
-						<div class="title">
-							<h2 class="h3">Send message</h2>
-						</div>
-						<div class="text">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-						</div>
-
-						<div class="row">
-							<div class="col-sm-6">
-
-								<div class="form-field">
-									<label for="name">Name<span>required</span></label>
-									<input type="text" maxlength="100" name="name" id="name" minlength="2" required />
-								</div><!-- .form-field -->
-
-							</div><!-- .col-sm-6 -->
-							<div class="col-sm-6">
-
-								<div class="form-field">
-									<label for="email">Email<span>required</span></label>
-									<input type="email" name="email" id="email" required />
-								</div><!-- .form-field -->
-
-							</div><!-- .col-sm-6 -->
-						</div><!-- .row -->
-						<div class="form-field">
-							<label for="subject">Subject<span>required</span></label>
-							<input type="text" name="subject" id="subject" required />
-						</div><!-- .form-field -->
-						<div class="form-field">
-							<label for="message">Message<span>required</span></label>
-							<textarea maxlength="5000" rows="10" name="message" id="message" required></textarea>
-						</div><!-- .form-field -->
-						<div class="form-field text-right">
-							<div id="respond"></div>
-							<input type="submit" value="Send Message" class="btn">
-						</div><!-- .form-field -->
-					</form>
-
-				</div><!-- .form-inner -->
-			</div><!-- .form -->
-
+			
 		</div><!-- #content -->
 
 	</div><!-- #page-content -->
@@ -251,13 +203,31 @@
 				</div><!-- .col-sm-6 -->
 				<div class="col-sm-6">
 
-					<form action="/php/newsletter.php" method="POST" class="subscribe form-validate">
-						<button type="submit" class="btn btn-icon-newsletter"></button>
-						<div class="form-field">
-							<label for="subscribeemail">email...</label>
-							<input type="email" maxlength="100" name="subscribeemail" id="subscribeemail" required />
-						</div>
-					</form>
+					<!-- Begin MailChimp Signup Form -->
+					<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+					<style type="text/css">
+						#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+						/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+						   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+					</style>
+					<div>
+						<form action="http://cosmeticsmile.us3.list-manage.com/subscribe/post?u=6e252f0333fcc73e57e618a2b&amp;id=c6fb8e4ef3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<!--<label for="mce-EMAIL">Subscribe to our mailing list</label>-->
+							<button type="submit" class="btn btn-icon-newsletter"></button>
+							<div class="form-field">
+								<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+							</div>
+							
+
+						    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						    <div style="position: absolute; left: -5000px;"><input type="text" name="b_6e252f0333fcc73e57e618a2b_c6fb8e4ef3" value=""></div>
+							<!--<div class="clear">
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">-->
+							</div>
+						</form>
+					</div>
+
+					<!--End mc_embed_signup-->
 
 				</div><!-- .col-sm-6 -->
 			</div><!-- .row-->
@@ -325,6 +295,7 @@
 
 	<!-- Main theme javaScript file -->
 	<script type="text/javascript" src="/js/theme.js"></script>
+
 
 	<!-- Map -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
